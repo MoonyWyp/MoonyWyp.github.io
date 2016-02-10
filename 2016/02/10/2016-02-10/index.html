@@ -37,7 +37,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="乔姆斯基,语言学," />
+  <meta name="keywords" content="单片机,学习笔记," />
 
 
 
@@ -53,28 +53,43 @@
 
 
 
-<meta name="description" content="两篇论文皆以“浅谈”命名，这一篇的参考文献亦是许多“浅谈”。其实我这应该算是浅谈之浅谈，是为浅浅谈。博客实在低产，将这两篇浅浅谈贴上来充数。
-浅谈乔姆斯基的转换生成理论
+<meta name="description" content="去年大一的时候就对单片机有所接触，但仅限于断断续续的不系统的学习，这次借蓝桥杯的契机好好学习一个。选用了郭天祥老师的教程，希望能坚持下去并理解透彻。做此笔记系列一是督促学习，二来梳理思路，三则丰富博客。
+Lesson1 预备知识电平特性
 
-摘要美国学者诺姆•乔姆斯基在20世纪50年代提出了转换生成语法，在语言学领域产生了深远的影响，被誉为“乔姆斯基革命”。本文主要对乔姆斯基的转换生成理论中表层结构与深层结构的概念进行了简要的梳理。
-关键词：诺姆•乔姆斯基；转换生成">
+TTL电平: 高 +5V  低 0V
+RS232电平: 高 -12V 低 +12V
+
+二进制、十六进制
+
+B表示二进制 H表示十六进制
+转换：4位二进制 ——&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="乔姆斯基">
-<meta property="og:url" content="http://yoursite.com/2015/12/12/2015-12-12-2/index.html">
+<meta property="og:title" content="51单片机学习笔记lesson1">
+<meta property="og:url" content="http://yoursite.com/2016/02/10/2016-02-10/index.html">
 <meta property="og:site_name" content="Spade K">
-<meta property="og:description" content="两篇论文皆以“浅谈”命名，这一篇的参考文献亦是许多“浅谈”。其实我这应该算是浅谈之浅谈，是为浅浅谈。博客实在低产，将这两篇浅浅谈贴上来充数。
-浅谈乔姆斯基的转换生成理论
+<meta property="og:description" content="去年大一的时候就对单片机有所接触，但仅限于断断续续的不系统的学习，这次借蓝桥杯的契机好好学习一个。选用了郭天祥老师的教程，希望能坚持下去并理解透彻。做此笔记系列一是督促学习，二来梳理思路，三则丰富博客。
+Lesson1 预备知识电平特性
 
-摘要美国学者诺姆•乔姆斯基在20世纪50年代提出了转换生成语法，在语言学领域产生了深远的影响，被誉为“乔姆斯基革命”。本文主要对乔姆斯基的转换生成理论中表层结构与深层结构的概念进行了简要的梳理。
-关键词：诺姆•乔姆斯基；转换生成">
-<meta property="og:updated_time" content="2016-01-09T06:34:50.227Z">
+TTL电平: 高 +5V  低 0V
+RS232电平: 高 -12V 低 +12V
+
+二进制、十六进制
+
+B表示二进制 H表示十六进制
+转换：4位二进制 ——&amp;">
+<meta property="og:updated_time" content="2016-02-10T09:57:47.941Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="乔姆斯基">
-<meta name="twitter:description" content="两篇论文皆以“浅谈”命名，这一篇的参考文献亦是许多“浅谈”。其实我这应该算是浅谈之浅谈，是为浅浅谈。博客实在低产，将这两篇浅浅谈贴上来充数。
-浅谈乔姆斯基的转换生成理论
+<meta name="twitter:title" content="51单片机学习笔记lesson1">
+<meta name="twitter:description" content="去年大一的时候就对单片机有所接触，但仅限于断断续续的不系统的学习，这次借蓝桥杯的契机好好学习一个。选用了郭天祥老师的教程，希望能坚持下去并理解透彻。做此笔记系列一是督促学习，二来梳理思路，三则丰富博客。
+Lesson1 预备知识电平特性
 
-摘要美国学者诺姆•乔姆斯基在20世纪50年代提出了转换生成语法，在语言学领域产生了深远的影响，被誉为“乔姆斯基革命”。本文主要对乔姆斯基的转换生成理论中表层结构与深层结构的概念进行了简要的梳理。
-关键词：诺姆•乔姆斯基；转换生成">
+TTL电平: 高 +5V  低 0V
+RS232电平: 高 -12V 低 +12V
+
+二进制、十六进制
+
+B表示二进制 H表示十六进制
+转换：4位二进制 ——&amp;">
 
 
 
@@ -86,7 +101,7 @@
   };
 </script>
 
-  <title> 乔姆斯基 | Spade K </title>
+  <title> 51单片机学习笔记lesson1 | Spade K </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -236,7 +251,7 @@
             
             
               
-                乔姆斯基
+                51单片机学习笔记lesson1
               
             
           </h1>
@@ -245,8 +260,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-12-12T18:34:36+08:00" content="2015-12-12">
-              2015-12-12
+            <time itemprop="dateCreated" datetime="2016-02-10T14:47:00+08:00" content="2016-02-10">
+              2016-02-10
             </time>
           </span>
 
@@ -255,8 +270,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/读/" itemprop="url" rel="index">
-                    <span itemprop="name">读</span>
+                  <a href="/categories/51单片机学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">51单片机学习笔记</span>
                   </a>
                 </span>
 
@@ -271,8 +286,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/12/12/2015-12-12-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/12/2015-12-12-2/" itemprop="commentsCount"></span>
+                <a href="/2016/02/10/2016-02-10/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/10/2016-02-10/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -291,25 +306,25 @@
       
 
       
-        <span itemprop="articleBody"><p>两篇论文皆以“浅谈”命名，这一篇的参考文献亦是许多“浅谈”。其实我这应该算是浅谈之浅谈，是为浅浅谈。博客实在低产，将这两篇浅浅谈贴上来充数。</p>
-<center><br><h2>浅谈乔姆斯基的转换生成理论</h2><br></center>
-
-<p><strong>摘要</strong><br>美国学者诺姆•乔姆斯基在20世纪50年代提出了转换生成语法，在语言学领域产生了深远的影响，被誉为“乔姆斯基革命”。本文主要对乔姆斯基的转换生成理论中表层结构与深层结构的概念进行了简要的梳理。</p>
-<p><strong>关键词</strong>：诺姆•乔姆斯基；转换生成语法；表层结构；深层结构。</p>
-<p><strong>1.引论</strong></p>
-<p>转换生成语法是美国语言学家乔姆斯基提出的一个描述文法的术语，他在1957年所写的《文法结构》是转换生成语法诞生的标志。转换生成语法的提出极大地冲击了当时以布龙菲尔德为代表的美国描写语言学派，并对后世语言学领域产生了深远的影响。</p>
-<p>乔姆斯基的转换生成语法被认为是语言学领域中的一次革命性变革，其影响力波及到语言学、心理学、哲学、教育学、逻辑学、翻译理论、通讯技术、计算机语言等领域，英国当代语言学家约翰•莱茵斯曾经做出这样的评论：“无论乔姆斯基的语法理论正确与否，它无疑是当前最有生命力、最有影响力的语法理论。”转换生成语法理论的影响力可见一斑。[1]</p>
-<p>本文主要阐述乔姆斯基转换生成语法的提出和其中的一些基本概念，为语言学的深入探究提供基础。<br><a id="more"></a></p>
-<p><strong>2.转换生成语法的提出</strong></p>
-<p>在乔姆斯基之前，大多数句法研究都是在语言行为层面展开的，被称为“转换语法”。<a href="155">2</a>乔姆斯基提出句法研究不仅要针对人们实际的语言行为，更要解释语言行为背后的心智活动，关注语言能力如何帮助语言使用者生成数量无限的合乎语法的句子。换句话说，乔姆斯基不仅关注“转换语法”，也关注“生成语法”，所以他提出的句法理论被称为“转换生成语法”。</p>
-<p>这一理论认为说话的方式遵循一定的句法，这种句法是以形式的语法为特征的，具体而言就是一种不受语境影响并带有转换生成规则的语法。在该理论中，儿童被假定为天生具有适用于所有人类语言的基本语法结构的知识，这种与生俱来的知识通常被称作“普遍语法”。</p>
-<p><strong>3.表层结构与深层结构</strong></p>
-<p>转换生成语法的一组基本概念是“表层结构”与“深层结构”。“表层结构”是指一个句子的实际表现出来的用于交际的句法形式，是句法表达的最后阶段；而“深层结构”是指一个句子的深层次的抽象的结构组合，是句子成分之间内在的语法关系，深层结构不能从句子的具体形式直接看出来。</p>
-<p>乔姆斯基认为，所谓“掌握语言”，是听懂或说出无限多句子的能力。[1]句子的创造是有规则的,其一是短语结构规则,它与深层结构相联系,短语结构规则不仅能生成语言结构语符列,还能对语符列提供足够成分分析,因此比有限状态语法能提供更多的信息;其二是转换规则,句子的深层结构通过转换规则变为表层结构。</p>
-<p>通过转换生成语法，可以将表面形式不同而含义相同的句子联系起来。以英语中常见的被动语态为例，“broke the vase”和“The vase was broken.”表层结构不同而含义相同是因为二者具有相同的深层结构。另外，转换生成理论主张把句子的表层结构转化为深层结构，从而将表层结构相似的句子区分开来。[1]“Tom is easy to please.”和“Tom is eager to please.”表层结构相似而含义不同，是因为二者的深层结构存在很大差异。（Yule 2000：101-102）</p>
-<p><strong>4.结语</strong></p>
-<p>乔姆斯基的转换生成语法基于“普遍语法”的大胆假设：儿童被假定为天生具有适用于所有人类语言的基本语法结构的知识，进而对人们的语言行为和其背后的心智活动进行了解释。乔姆斯基试图建立一套能像数理公式一样进行形式运算推理的规则来解释自然语言，除了对语言学产生了深远的影响，甚至还对心理学、哲学、逻辑学等领域产生了影响。虽然乔姆斯基的转换生成语法受到了一些质疑，但其贡献是巨大的。<br>科学的发展过程中很多理论都建立在假设的基础上，如哥白尼的日心说、玻尔的量子化理论、门捷列夫的元素周期表……学习理论的同时，乔姆斯基大胆做出假设的研究方法也是值得我们学习的。</p>
-<p><center><br><strong>参考文献</strong><br></center><br>［1］南世锋.浅谈乔姆斯基的转换生成语法[J].湖北广播电视大学学报，2009(3):106 - 107.<br>［2］蓝纯.语言学概论[M].北京:外语教学与研究出版社，2009.12.</p>
+        <span itemprop="articleBody"><p><em>去年大一的时候就对单片机有所接触，但仅限于断断续续的不系统的学习，这次借蓝桥杯的契机好好学习一个。选用了郭天祥老师的教程，希望能坚持下去并理解透彻。做此笔记系列一是督促学习，二来梳理思路，三则丰富博客。</em></p>
+<h2 id="Lesson1_预备知识">Lesson1 预备知识</h2><p><strong>电平特性</strong></p>
+<ol>
+<li>TTL电平: 高 +5V  低 0V</li>
+<li>RS232电平: 高 -12V 低 +12V</li>
+</ol>
+<p><strong>二进制、十六进制</strong></p>
+<ol>
+<li>B表示二进制 H表示十六进制</li>
+<li>转换：4位二进制 ——&gt; 十进制 ——&gt; 十六进制</li>
+<li>十六进制：0 1 2 3 4 5 6 7 8 9 A B C D E F 10</li>
+</ol>
+<p><strong>二进制逻辑运算</strong><br> 与 符号：·<br> 或 符号：+<br> 非 符号：(上加横杠)<br> 异或 符号：⊕  (相同为0 不同为1)</p>
+<p><strong>80C51系列</strong><br><strong>1.型号的介绍</strong><br>STC<br>89C52RC 2表示容量2<em>4k=8k<br>40C-PDIP 40表示所支持的晶振的最高频率为40MHz C商业级(I工业级)差别在于工作环境温度 PDIP是封装方式<br>0721CV4336 07年第21周生产<br><em>*2.引脚封装</em></em><br>分类：总线型、非总线型<br>总线型中P3引脚具有第二功能</p>
+<p><strong>单片机组成</strong><br>CPU<br>RAM<br>ROM<br>I/O<br>T/C 两个定时器/计数器，有定时模式和计数模式。<br>中断控制系统<br>全双工UART(通用异步接收发送器）的穿行I/O口 实现单片机之间和单片机与微机之间通信<br>片内振荡器与时钟产生电路</p>
+<p><strong>C51</strong><br><strong>1.数据类型扩充定义</strong><br>sfr：特殊功能寄存器声明<br>sbit：特殊功能位的声明<br>bit：位变量的声明<br>例： sbit OV = PSW^2 其中2表示PSW寄存器的第二位<br><strong>2.C51头文件</strong><br>reg51.h 、reg52.h（定义了特殊功能寄存器和位寄存器）<br><strong>3.运算符</strong><br>&amp;&amp;逻辑与 ||逻辑或 ！逻辑非<br>&amp;按位与 |按位或<br>位右移(最高位补0)&gt;&gt;<br>位左移(最低位补0)&lt;&lt;<br>按位异或^<br>按位取反~<br><strong>4.基本语句</strong><br>if while for switch/case do-while</p>
+<p><strong>KEIL</strong><br>I/O口上电默认为高电平</p>
+<p><strong>疑问：</strong><br>点亮第二个二极管 10111111 转十六进制应为0xdf 郭写了0xfd却仍然实现了点亮目的 奇也怪哉 可能是因为上下接反实际点亮的是倒数第二个？ 【查了一下貌似keil有0xfd的bug不知道有没有关联】 </p>
+<a id="more"></a>
 </span>
       
     </div>
@@ -318,9 +333,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/乔姆斯基/" rel="tag">#乔姆斯基</a>
+            <a href="/tags/单片机/" rel="tag">#单片机</a>
           
-            <a href="/tags/语言学/" rel="tag">#语言学</a>
+            <a href="/tags/学习笔记/" rel="tag">#学习笔记</a>
           
         </div>
       
@@ -329,17 +344,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/12/12/2015-12-12-1/" rel="next" title="索绪尔">
-                <i class="fa fa-chevron-left"></i> 索绪尔
+              <a href="/2016/01/31/2016-01-31/" rel="next" title="相忘于江湖也好">
+                <i class="fa fa-chevron-left"></i> 相忘于江湖也好
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/10/2016-01-10/" rel="prev" title="我又把你弄丢了">
-                我又把你弄丢了 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -389,8 +400,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/12/12/2015-12-12-2/"
-           data-title="乔姆斯基" data-url="http://yoursite.com/2015/12/12/2015-12-12-2/">
+      <div class="ds-thread" data-thread-key="2016/02/10/2016-02-10/"
+           data-title="51单片机学习笔记lesson1" data-url="http://yoursite.com/2016/02/10/2016-02-10/">
       </div>
     
   </div>
@@ -523,7 +534,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">浅谈乔姆斯基的转换生成理论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Lesson1_预备知识"><span class="nav-number">1.</span> <span class="nav-text">Lesson1 预备知识</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

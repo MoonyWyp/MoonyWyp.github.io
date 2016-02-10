@@ -232,6 +232,126 @@
             
               
                 
+                <a class="post-title-link" href="/2016/02/10/2016-02-10/" itemprop="url">
+                  51单片机学习笔记lesson1
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-02-10T14:47:00+08:00" content="2016-02-10">
+              2016-02-10
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/51单片机学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">51单片机学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/10/2016-02-10/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/10/2016-02-10/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><em>去年大一的时候就对单片机有所接触，但仅限于断断续续的不系统的学习，这次借蓝桥杯的契机好好学习一个。选用了郭天祥老师的教程，希望能坚持下去并理解透彻。做此笔记系列一是督促学习，二来梳理思路，三则丰富博客。</em></p>
+<h2 id="Lesson1_预备知识">Lesson1 预备知识</h2><p><strong>电平特性</strong></p>
+<ol>
+<li>TTL电平: 高 +5V  低 0V</li>
+<li>RS232电平: 高 -12V 低 +12V</li>
+</ol>
+<p><strong>二进制、十六进制</strong></p>
+<ol>
+<li>B表示二进制 H表示十六进制</li>
+<li>转换：4位二进制 ——&gt; 十进制 ——&gt; 十六进制</li>
+<li>十六进制：0 1 2 3 4 5 6 7 8 9 A B C D E F 10</li>
+</ol>
+<p><strong>二进制逻辑运算</strong><br> 与 符号：·<br> 或 符号：+<br> 非 符号：(上加横杠)<br> 异或 符号：⊕  (相同为0 不同为1)</p>
+<p><strong>80C51系列</strong><br><strong>1.型号的介绍</strong><br>STC<br>89C52RC 2表示容量2<em>4k=8k<br>40C-PDIP 40表示所支持的晶振的最高频率为40MHz C商业级(I工业级)差别在于工作环境温度 PDIP是封装方式<br>0721CV4336 07年第21周生产<br><em>*2.引脚封装</em></em><br>分类：总线型、非总线型<br>总线型中P3引脚具有第二功能</p>
+<p><strong>单片机组成</strong><br>CPU<br>RAM<br>ROM<br>I/O<br>T/C 两个定时器/计数器，有定时模式和计数模式。<br>中断控制系统<br>全双工UART(通用异步接收发送器）的穿行I/O口 实现单片机之间和单片机与微机之间通信<br>片内振荡器与时钟产生电路</p>
+<p><strong>C51</strong><br><strong>1.数据类型扩充定义</strong><br>sfr：特殊功能寄存器声明<br>sbit：特殊功能位的声明<br>bit：位变量的声明<br>例： sbit OV = PSW^2 其中2表示PSW寄存器的第二位<br><strong>2.C51头文件</strong><br>reg51.h 、reg52.h（定义了特殊功能寄存器和位寄存器）<br><strong>3.运算符</strong><br>&amp;&amp;逻辑与 ||逻辑或 ！逻辑非<br>&amp;按位与 |按位或<br>位右移(最高位补0)&gt;&gt;<br>位左移(最低位补0)&lt;&lt;<br>按位异或^<br>按位取反~<br><strong>4.基本语句</strong><br>if while for switch/case do-while</p>
+<p><strong>KEIL</strong><br>I/O口上电默认为高电平</p>
+<p><strong>疑问：</strong><br>点亮第二个二极管 10111111 转十六进制应为0xdf 郭写了0xfd却仍然实现了点亮目的 奇也怪哉 可能是因为上下接反实际点亮的是倒数第二个？ 【查了一下貌似keil有0xfd的bug不知道有没有关联】 </p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/10/2016-02-10/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/01/31/2016-01-31/" itemprop="url">
                   相忘于江湖也好
                 </a>
@@ -848,117 +968,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/11/23/2015-11-23/" itemprop="url">
-                  很久以后
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-11-23T22:33:36+08:00" content="2015-11-23">
-              2015-11-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hey-Jude/" itemprop="url" rel="index">
-                    <span itemprop="name">Hey Jude</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/11/23/2015-11-23/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/23/2015-11-23/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <span itemprop="articleBody">
-            
-              <blockquote>
-<p>很久以后 看见你的笑容</p>
-<p>很久以后 也许很久以后</p>
-<p>很久以后 与你擦身而过</p>
-<p>我还能够 微笑和你挥手</p>
-<p>我爱过的你 是否改变很多</p>
-<p>如果重新来过 你还会不会走</p>
-<p>走出我的从前 出现我的以后 以后</p>
-</blockquote>
-
-            
-          </span>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
@@ -1005,21 +1014,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">11</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">17</span>
+              <span class="site-state-item-count">19</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
