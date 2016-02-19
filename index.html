@@ -295,11 +295,7 @@
 <p><strong>静态数码管</strong><br>段选接8位数据线来保持显示的字形码。送入字形码后一直保持直到送入新的。<br>位选控制哪一个数码管亮，段选控制数码管亮什么东西。</p>
 <p><strong>74HC573锁存器</strong><br>锁存端<br>高电平 输入端与输出端直通<br>低电平 输入端与输出端断开 输出端保持原样</p>
 <p><strong>动态数码管</strong><br>P1控位选，P0控位选<br>先发送位选，再发送段选。<br>GPIO_PLACE = DIG_PLACE[i];     //发送位选<br>GPIO_DIG = DisplayData[7-i];     //发送段码</p>
-<p><strong>利用编码表</strong><br>unsigned char code DIG_CODE[17] = {<br>0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,<br>0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71 };<br>//0、1、2、3、4、5、6、7、8、9、A、b、C、d、E、F的显示码<br>“code”是将其置于程序存储器中，不占用随机存储器。</p>
-<p><strong>中断</strong><br><strong>1.优先级顺序：</strong><br>外部中断0<br>定时/计数器0<br>外部中断1<br>定时/计数器1<br>串行口<br><strong>2.正在进行的中断不能被新的同级或低级中断请求中断</strong><br><strong>3.正在进行的低级中断可以被高级中断所中断</strong><br><strong>4.应用</strong><br>EA=1;//开总中断<br>EX0=1;//开外部中断0<br>//中断服务函数<br>void exter0() interrupt 0<br>{<br>    ;<br>}//中断函数不需要声明<br><strong>5.有两种方式</strong></p>
-<p><strong>定时器</strong><br><strong>1.TMOD控制工作方式</strong><br>低4位控制T0，高四位控制T1。<br>GATE位：GATE=0时只要TCON中的TR0或TR1为1即可启动<br>C/T位：0为定时模式 1为计数模式<br>M1M0位：工作方式设置位 00:13位定时/计数器 01:16位定时/计数器 10:8位自动重装定时/计数器 11:T0分成两个独立的8位定时/计数器;T1停止计数<br><strong>2.TCON</strong><br>低四位控制外部中断<br>高四位控制启动和中断申请<br>TCON控制启动与中断请求<br>计数值N<em>及其周期Tcy=定时时间t<br>TR0：T0运行控制位 1开始工作 0停止工作<br>方式01：(16位)计数个数+计数初值=2^16=65536<br>TH0=(65536-初值)/256<br>TL0=(65536-初值)%256<br><em>*3.应用</em></em><br>初始化步骤：<br>TMOD赋值确定T0和T1工作方式<br>计算初值 写入TH0、TL0或TH1、TL1<br>若为中断 对IE赋值 开放中断<br>TR0或TR1置位</p>
-<p>TMOD=0X01;//设置定时器0为工作方式1<br>TH0=(65536-50000)/256;//赋初值<br>TL0=(65536-50000)%256;<br>EA=1;//开总中断<br>ET0=1;//T0打开<br>TR0=1;//启动定时器0<br>void exter0() interrupt 1<br>{<br>    TH0=(65536-50000)/256;<br>    TL0=(65536-50000)%256;//重新赋初值<br>}</p>
-<p><em>有点不懂既然可以通过x–的方式精确计算出所需延迟时间为何还要用定时器</em><br>
+<p><strong>利用编码表</strong><br>unsigned char code DIG_CODE[17] = {<br>0x3f,0x06,0x5b,0x4f,0x66,0x6d,0x7d,0x07,<br>0x7f,0x6f,0x77,0x7c,0x39,0x5e,0x79,0x71 };<br>//0、1、2、3、4、5、6、7、8、9、A、b、C、d、E、F的显示码<br>“code”是将其置于程序存储器中，不占用随机存储器。<br>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/02/17/2016-02-19/#more" rel="contents">
               阅读全文 &raquo;
