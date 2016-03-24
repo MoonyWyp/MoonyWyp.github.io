@@ -232,6 +232,220 @@
             
               
                 
+                <a class="post-title-link" href="/2016/03/01/2016-03-03cmu5/" itemprop="url">
+                  单片机学习笔记5
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-03-01T22:03:00+08:00" content="2016-03-01">
+              2016-03-01
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/51单片机学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">51单片机学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/03/01/2016-03-03cmu5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/01/2016-03-03cmu5/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><em>就这么开学了，这学期好难熬。</em></p>
+<p><strong>Lesson5键盘</strong></p>
+<p><strong>中断函数中程序不要太长</strong><br>否则会覆盖下一次中断</p>
+<p><strong>键盘</strong><br>IO口作为输入使用时先写1<br>读到0表示已按下</p>
+<p><strong>松手检测</strong><br>if(key==0){<br>…<br>while(!key);//key=1时跳出<br>}</p>
+<p><strong>按键抖动</strong><br>软件消抖：if判断中先delay10ms然后再if检测</p>
+<p><strong>矩阵键盘</strong><br>由于矩阵键盘没有接GND，需要手动赋0值。<br>1.赋值P1为1111 1110<br>2.读temp=P1<br>3.a=temp&amp;0xf0<br>4.如果a=0xf0，则没有键被按下</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/01/2016-03-03cmu5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/02/26/2016-02-26cmu4/" itemprop="url">
+                  单片机学习笔记4
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            发表于
+            <time itemprop="dateCreated" datetime="2016-02-26T16:38:00+08:00" content="2016-02-26">
+              2016-02-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp; 分类于
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/51单片机学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">51单片机学习笔记</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/26/2016-02-26cmu4/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/26/2016-02-26cmu4/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body">
+
+      
+      
+
+      
+        
+          <p><em>肯定学习不完了，开学见！</em></p>
+<p><strong>Lesson4</strong></p>
+<p><strong>动态显示</strong><br>亮度比静态差</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/02/26/2016-02-26cmu4/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/02/17/2016-02-19/" itemprop="url">
                   单片机学习笔记3
                 </a>
@@ -761,230 +975,12 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/10/2016-01-10/" itemprop="url">
-                  我又把你弄丢了
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2016-01-10T09:36:00+08:00" content="2016-01-10">
-              2016-01-10
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hey-Jude/" itemprop="url" rel="index">
-                    <span itemprop="name">Hey Jude</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/10/2016-01-10/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/10/2016-01-10/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p><strong><em>高能预警<br>本文内含音乐测试模块，请做好心理准备并<span style="color:red">将系统音量调低</span>再点开！</em></strong></p>
-<p>本来想写个2015年终总结的，奈何烤漆将至而我仍有许多功课需要预习，只好先搁下了，也许就此鸽掉了。</p>
-<p>前天晚上想多预习一会儿，拖到两点才睡，第二天又不想错过管理学最后一节，七点半就起来了。精神疲惫超过了身体疲惫，于是昨天中午选择了玩耍而不是午睡。许久不晚睡早起，许久不放弃午觉，突然这样一次就令身体十分难受，到昨晚我一直觉得自己马上就要感冒了。</p>
-<p>这样的状态下入睡的结果就是，深深地沉浸到自己的梦里。以至于我甚至不知道Simon和Mr.Lock是什么时候起的，当时我应该是在追你吧。似乎每次很倦怠的时候都会梦到你，看来你已经在我的潜意识里安家了。</p>
-<p>有你的梦令人很舍不得离开，它们往往以非常的愉悦开始，以深深的惆怅终止。但我仍然很爱它们。就像现在，虽然惆怅但我乐于将所想记录下来。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/10/2016-01-10/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/12/2015-12-12-2/" itemprop="url">
-                  乔姆斯基
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            发表于
-            <time itemprop="dateCreated" datetime="2015-12-12T18:34:36+08:00" content="2015-12-12">
-              2015-12-12
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp; 分类于
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/读/" itemprop="url" rel="index">
-                    <span itemprop="name">读</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/12/2015-12-12-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/12/2015-12-12-2/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body">
-
-      
-      
-
-      
-        
-          <p>两篇论文皆以“浅谈”命名，这一篇的参考文献亦是许多“浅谈”。其实我这应该算是浅谈之浅谈，是为浅浅谈。博客实在低产，将这两篇浅浅谈贴上来充数。</p>
-<center><br><h2>浅谈乔姆斯基的转换生成理论</h2><br></center>
-
-<p><strong>摘要</strong><br>美国学者诺姆•乔姆斯基在20世纪50年代提出了转换生成语法，在语言学领域产生了深远的影响，被誉为“乔姆斯基革命”。本文主要对乔姆斯基的转换生成理论中表层结构与深层结构的概念进行了简要的梳理。</p>
-<p><strong>关键词</strong>：诺姆•乔姆斯基；转换生成语法；表层结构；深层结构。</p>
-<p><strong>1.引论</strong></p>
-<p>转换生成语法是美国语言学家乔姆斯基提出的一个描述文法的术语，他在1957年所写的《文法结构》是转换生成语法诞生的标志。转换生成语法的提出极大地冲击了当时以布龙菲尔德为代表的美国描写语言学派，并对后世语言学领域产生了深远的影响。</p>
-<p>乔姆斯基的转换生成语法被认为是语言学领域中的一次革命性变革，其影响力波及到语言学、心理学、哲学、教育学、逻辑学、翻译理论、通讯技术、计算机语言等领域，英国当代语言学家约翰•莱茵斯曾经做出这样的评论：“无论乔姆斯基的语法理论正确与否，它无疑是当前最有生命力、最有影响力的语法理论。”转换生成语法理论的影响力可见一斑。[1]</p>
-<p>本文主要阐述乔姆斯基转换生成语法的提出和其中的一些基本概念，为语言学的深入探究提供基础。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/12/2015-12-12-2/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
 
   </section>
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1025,7 +1021,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">14</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

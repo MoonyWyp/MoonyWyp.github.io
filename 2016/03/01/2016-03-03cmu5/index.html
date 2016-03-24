@@ -37,7 +37,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="你," />
+  <meta name="keywords" content="51单片机,学习笔记," />
 
 
 
@@ -53,34 +53,34 @@
 
 
 
-<meta name="description" content="很久以后 看见你的笑容
-很久以后 也许很久以后
-很久以后 与你擦身而过
-我还能够 微笑和你挥手
-我爱过的你 是否改变很多
-如果重新来过 你还会不会走
-走出我的从前 出现我的以后 以后">
+<meta name="description" content="就这么开学了，这学期好难熬。
+Lesson5键盘
+中断函数中程序不要太长否则会覆盖下一次中断
+键盘IO口作为输入使用时先写1读到0表示已按下
+松手检测if(key==0){…while(!key);//key=1时跳出}
+按键抖动软件消抖：if判断中先delay10ms然后再if检测
+矩阵键盘由于矩阵键盘没有接GND，需要手动赋0值。1.赋值P1为1111 11102.读temp=P13.a=te">
 <meta property="og:type" content="article">
-<meta property="og:title" content="很久以后">
-<meta property="og:url" content="http://yoursite.com/2015/11/23/2015-11-23/index.html">
+<meta property="og:title" content="单片机学习笔记5">
+<meta property="og:url" content="http://yoursite.com/2016/03/01/2016-03-03cmu5/index.html">
 <meta property="og:site_name" content="Spade K">
-<meta property="og:description" content="很久以后 看见你的笑容
-很久以后 也许很久以后
-很久以后 与你擦身而过
-我还能够 微笑和你挥手
-我爱过的你 是否改变很多
-如果重新来过 你还会不会走
-走出我的从前 出现我的以后 以后">
-<meta property="og:updated_time" content="2015-12-09T12:42:59.594Z">
+<meta property="og:description" content="就这么开学了，这学期好难熬。
+Lesson5键盘
+中断函数中程序不要太长否则会覆盖下一次中断
+键盘IO口作为输入使用时先写1读到0表示已按下
+松手检测if(key==0){…while(!key);//key=1时跳出}
+按键抖动软件消抖：if判断中先delay10ms然后再if检测
+矩阵键盘由于矩阵键盘没有接GND，需要手动赋0值。1.赋值P1为1111 11102.读temp=P13.a=te">
+<meta property="og:updated_time" content="2016-03-24T02:12:57.650Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="很久以后">
-<meta name="twitter:description" content="很久以后 看见你的笑容
-很久以后 也许很久以后
-很久以后 与你擦身而过
-我还能够 微笑和你挥手
-我爱过的你 是否改变很多
-如果重新来过 你还会不会走
-走出我的从前 出现我的以后 以后">
+<meta name="twitter:title" content="单片机学习笔记5">
+<meta name="twitter:description" content="就这么开学了，这学期好难熬。
+Lesson5键盘
+中断函数中程序不要太长否则会覆盖下一次中断
+键盘IO口作为输入使用时先写1读到0表示已按下
+松手检测if(key==0){…while(!key);//key=1时跳出}
+按键抖动软件消抖：if判断中先delay10ms然后再if检测
+矩阵键盘由于矩阵键盘没有接GND，需要手动赋0值。1.赋值P1为1111 11102.读temp=P13.a=te">
 
 
 
@@ -92,7 +92,7 @@
   };
 </script>
 
-  <title> 很久以后 | Spade K </title>
+  <title> 单片机学习笔记5 | Spade K </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -242,7 +242,7 @@
             
             
               
-                很久以后
+                单片机学习笔记5
               
             
           </h1>
@@ -251,8 +251,8 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2015-11-23T22:33:36+08:00" content="2015-11-23">
-              2015-11-23
+            <time itemprop="dateCreated" datetime="2016-03-01T22:03:00+08:00" content="2016-03-01">
+              2016-03-01
             </time>
           </span>
 
@@ -261,8 +261,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hey-Jude/" itemprop="url" rel="index">
-                    <span itemprop="name">Hey Jude</span>
+                  <a href="/categories/51单片机学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">51单片机学习笔记</span>
                   </a>
                 </span>
 
@@ -277,8 +277,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/11/23/2015-11-23/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/11/23/2015-11-23/" itemprop="commentsCount"></span>
+                <a href="/2016/03/01/2016-03-03cmu5/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/01/2016-03-03cmu5/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -297,15 +297,14 @@
       
 
       
-        <span itemprop="articleBody"><blockquote>
-<p>很久以后 看见你的笑容</p>
-<p>很久以后 也许很久以后</p>
-<p>很久以后 与你擦身而过</p>
-<p>我还能够 微笑和你挥手</p>
-<p>我爱过的你 是否改变很多</p>
-<p>如果重新来过 你还会不会走</p>
-<p>走出我的从前 出现我的以后 以后</p>
-</blockquote>
+        <span itemprop="articleBody"><p><em>就这么开学了，这学期好难熬。</em></p>
+<p><strong>Lesson5键盘</strong></p>
+<p><strong>中断函数中程序不要太长</strong><br>否则会覆盖下一次中断</p>
+<p><strong>键盘</strong><br>IO口作为输入使用时先写1<br>读到0表示已按下</p>
+<p><strong>松手检测</strong><br>if(key==0){<br>…<br>while(!key);//key=1时跳出<br>}</p>
+<p><strong>按键抖动</strong><br>软件消抖：if判断中先delay10ms然后再if检测</p>
+<p><strong>矩阵键盘</strong><br>由于矩阵键盘没有接GND，需要手动赋0值。<br>1.赋值P1为1111 1110<br>2.读temp=P1<br>3.a=temp&amp;0xf0<br>4.如果a=0xf0，则没有键被按下</p>
+<a id="more"></a>
 </span>
       
     </div>
@@ -314,7 +313,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/你/" rel="tag">#你</a>
+            <a href="/tags/51单片机/" rel="tag">#51单片机</a>
+          
+            <a href="/tags/学习笔记/" rel="tag">#学习笔记</a>
           
         </div>
       
@@ -323,17 +324,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/11/23/2015-11-23-2/" rel="next" title="小雪下了大到暴雪">
-                <i class="fa fa-chevron-left"></i> 小雪下了大到暴雪
+              <a href="/2016/02/26/2016-02-26cmu4/" rel="next" title="单片机学习笔记4">
+                <i class="fa fa-chevron-left"></i> 单片机学习笔记4
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2015/11/30/2015-11-30/" rel="prev" title="12月——秋后算账">
-                12月——秋后算账 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -383,8 +380,8 @@
         
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/11/23/2015-11-23/"
-           data-title="很久以后" data-url="http://yoursite.com/2015/11/23/2015-11-23/">
+      <div class="ds-thread" data-thread-key="2016/03/01/2016-03-03cmu5/"
+           data-title="单片机学习笔记5" data-url="http://yoursite.com/2016/03/01/2016-03-03cmu5/">
       </div>
     
   </div>
